@@ -1,13 +1,12 @@
 /* Header */
+/*f7d577*/
 .navbar{
     font-family: 'Happy Monkey', cursive;
     text-transform: capitalize;
+    word-spacing: 2em;
+    -webkit-text-fill-color: rgb(0, 0, 0);
 }
 
-.logo img {
-    width: 100px;
-    height: auto;
-}
 
 header {
     width: 100%;
@@ -15,5 +14,27 @@ header {
     flex-direction: row;
     padding: 1em;
     justify-content: space-between;
+    align-items: center;
 }
 
+.logo img {
+    width: 100px;
+    height: auto;
+    padding-left: 2em;
+}
+
+.icons{
+    padding-right: 2em;
+}
+
+.material-symbols-outlined{
+    padding: .5em;
+}
+
+.home,
+.about,
+.menu,
+.contact,
+.cart{
+    
+}
