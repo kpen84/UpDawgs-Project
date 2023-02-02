@@ -5,6 +5,7 @@
     text-transform: capitalize;
     word-spacing: 2em;
     -webkit-text-fill-color: rgb(0, 0, 0);
+    margin: 2em;
 }
 
 
@@ -12,7 +13,6 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 1em;
     justify-content: space-between;
     align-items: center;
 }
@@ -20,12 +20,9 @@ header {
 .logo img {
     width: 100px;
     height: auto;
-    padding-left: 2em;
 }
 
-.icons{
-    padding-right: 2em;
-}
+
 
 .material-symbols-outlined{
     padding: .5em;
