@@ -1,1 +1,10 @@
 /* Header */
+.navbar{
+    font-family: 'Happy Monkey', cursive;
+    text-transform: capitalize;
+}
+
+.logo img {
+    width: 5%;
+    height: 5%;
+}
