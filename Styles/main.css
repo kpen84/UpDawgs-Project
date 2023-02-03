@@ -27,28 +27,27 @@ header {
     font-weight: 700;
     text-transform: capitalize;
     word-spacing: 2em;
-    -webkit-text-fill-color: #931009;
+    -webkit-text-fill-color: #B52C24;
     text-align: center;
     margin-right: 3em;
 }
 
 .logo img {
-    width: 100px;
+    width: 300px;
     height: auto;
     margin-left: 1em;
     margin-right: 1em;
 }
 
 
-
 .icons a {
     padding: .5em;
-    -webkit-text-fill-color: #931009;
+    -webkit-text-fill-color: #B52C24;
     background-color: #ffdb58;
 }
 
 a {
-    -webkit-text-fill-color: #931009;
+    -webkit-text-fill-color: #B52C24;
     text-decoration: none;
 }
 
@@ -56,33 +55,59 @@ a {
     text-decoration: underline;
 }
 
-main {
-    width: 100%;
-    height: 30em;
-    background-image: url('../images/hotdogbanner.png');
+
+
+@media only screen and (max-width: 775px) {
+
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 674px) {
     .icons {
         display: none;
     }
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 673px) {
     .navbar {
         display: none;
     }
     .icons {
         margin: 1em;
     }
+
+    .logo img {
+        width: 300px;
+        height: auto;
+    }
   }
 
-  @media only screen and (max-width: 434px) {
+  @media only screen and (max-width: 568px) {
     header{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-
+    }
+    .logo img {
+        width: 400px;
+        height: auto;
     }
 
   }
+
+
+
+  /*END OF HEADER*/
+
+
+
+  main {
+    width: 100%;
+    height: 30em;
+    background-image: url('../images/hotdogbanner.png');
+    background-size: cover;
+}
+
