@@ -72,6 +72,10 @@ a {
   }
 
   @media only screen and (max-width: 673px) {
+
+    header{
+        align-items: flex-start;
+}
     .navbar {
         display: none;
     }
@@ -88,11 +92,11 @@ a {
   @media only screen and (max-width: 568px) {
     header{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .logo img {
-        width: 400px;
+        width: 300px;
         height: auto;
     }
 
@@ -101,11 +105,11 @@ a {
   @media only screen and (max-width: 430px) {
     header{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .logo img {
-        width: 200px;
+        width: 160px;
         height: auto;
     }
 
