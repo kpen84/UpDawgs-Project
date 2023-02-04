@@ -66,13 +66,13 @@ a {
     }
   }
 
-@media only screen and (min-width: 651px) {
+@media only screen and (min-width: 551px) {
     .icons {
         display: none;
     }
   }
 
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 550px) {
 
     .navbar {
         display: none;
@@ -83,7 +83,7 @@ a {
     }
   }
 
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 550px) {
 
     header{
         align-items: flex-end;
