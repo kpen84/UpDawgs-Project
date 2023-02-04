@@ -15,7 +15,7 @@ body {
 header {
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -24,21 +24,21 @@ header {
 
 .navbar {
     font-family: 'Happy Monkey', cursive;
-    font-weight: bold;
-    font-size: larger;
-    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: medium;
+    text-transform:uppercase;
     word-spacing: 20px;
     -webkit-text-fill-color: #B52C24;
     text-align: center;
-    margin-right: 2em;
+    margin: 2em;
 }
 
+
+.logo {
+    text-align: center;
+}
 .logo img {
-    max-width: 90%;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 10px;
-    
+    width: 70%;
 }
 
 .icons{
@@ -60,43 +60,35 @@ a {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 832px) {
+    header{
+        justify-content: center;
+    }
+  }
 
-
-@media only screen and (min-width: 882px) {
+@media only screen and (min-width: 651px) {
     .icons {
         display: none;
     }
   }
 
-  @media only screen and (max-width: 881px) {
+  @media only screen and (max-width: 650px) {
 
     .navbar {
         display: none;
     }
-
     header{
+        justify-content: space-between;
         align-items: flex-start;
-}
-
+    }
   }
 
-  @media only screen and (max-width: 568px) {
+  @media only screen and (max-width: 650px) {
+
     header{
-        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: nowrap;
     }
-    
-
-
-  }
-
-  @media only screen and (max-width: 430px) {
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-
   }
 
 
