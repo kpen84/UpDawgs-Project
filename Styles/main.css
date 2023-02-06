@@ -13,8 +13,10 @@ body {
 }
 
 header {
+    position: fixed;
     background-color: #FDF9D6;
     width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -23,12 +25,13 @@ header {
 }
 
 .logo {
+  max-width: 200px;
 margin: 2em;
 }
 
 .logo img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: auto;
 }
 
 .navbar {
@@ -42,16 +45,22 @@ margin: 2em;
     margin: 1em;
 }
 
-a{
+nav{
+  position: relative;
+  position:static;
+}
+
+.navbar a{
   text-decoration: none;
   -webkit-text-fill-color: #B52C24;
 }
 
-.active{
+a.active{
   text-decoration: underline;
 }
 
 /*Popout Begin*/
+
 
 .overlay {
     width: 100%; 
@@ -59,6 +68,10 @@ a{
     overflow-x: hidden; 
     transition: 0.3s; 
     display: none;
+  }
+
+  .myNav{
+position: absolute;
   }
   
   .overlay-content {
@@ -80,6 +93,10 @@ a{
     color: #818181;
     display: block;
     transition: 0.3s; 
+  }
+
+  .icon{
+    display: none;
   }
   
   .overlay a:hover, .overlay a:focus {
@@ -150,14 +167,14 @@ a{
     background-size: cover;
 }
 
-@media only screen and (max-width: 1015px) {
+@media only screen and (max-width: 794px) {
     header{
         justify-content: center;
     }
 }
 
 
-@media only screen and (min-width: 691px) {
+@media only screen and (min-width: 571px) {
 
     .hamburger {
         display: none;
@@ -168,7 +185,7 @@ a{
     }
   }
 
-  @media only screen and (max-width: 690px) {
+  @media only screen and (max-width: 570px) {
 
     .navbar {
         display: none;
@@ -177,10 +194,6 @@ a{
   }
 
   @media only screen and (max-width: 690px) {
-
-    header{
-        flex-wrap: nowrap;
-    }
 }
 
 @media only screen and (max-width: 350px) {
