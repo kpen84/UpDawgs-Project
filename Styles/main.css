@@ -40,7 +40,15 @@ margin: 2em;
     -webkit-text-fill-color: #B52C24;
     text-align: center;
     margin: 1em;
-    text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  -webkit-text-fill-color: #B52C24;
+}
+
+.active{
+  text-decoration: underline;
 }
 
 /*Popout Begin*/
