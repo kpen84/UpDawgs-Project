@@ -46,11 +46,11 @@ margin: 2em;
 /*Popout Begin*/
 
 .overlay {
-    height: 100%;
     width: 100%; 
     background-color: rgba(0,0,0, 0.9); 
     overflow-x: hidden; 
     transition: 0.3s; 
+    display: none;
   }
   
   .overlay-content {
@@ -58,7 +58,7 @@ margin: 2em;
     top: 25%;
     width: 101%; 
     text-align: center; 
-    margin-top: 30px;
+    margin-top: 50px;
   }
   
   .overlay a {
