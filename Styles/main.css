@@ -55,10 +55,10 @@ margin: 2em;
   
   .overlay-content {
     position: relative;
-    top: 25%;
     width: 101%; 
     text-align: center; 
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   .overlay a {
@@ -85,6 +85,7 @@ margin: 2em;
   .openNav{
     opacity: 1;
   }
+
 
 /*Popout End*/
 
@@ -168,12 +169,14 @@ margin: 2em;
   }
 
   @media only screen and (max-width: 690px) {
+
     header{
         flex-wrap: nowrap;
     }
 }
 
 @media only screen and (max-width: 350px) {
+
     header{
         flex-wrap: wrap;
     }
