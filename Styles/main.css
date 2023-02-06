@@ -25,15 +25,16 @@ header {
 
 .logo {
   text-align: center;
-  max-width: 50%;
+  max-width: 380px;
+  width: auto;
   margin-left: 1em;
   margin-right: 1em;
 }
 
 
 .logo img {
-    max-height: 80%;
-    max-width: 80%;
+  width: 90%;
+
 }
 
 .navbar {
@@ -168,7 +169,7 @@ a.active{
 
 
 
-@media only screen and (min-width: 792px) {
+@media only screen and (min-width: 781px) {
 
     .hamburger {
         display: none;
@@ -179,7 +180,7 @@ a.active{
     }
   }
 
-  @media only screen and (max-width: 791px) {
+  @media only screen and (max-width: 780px) {
 
     .navbar {
         display: none;
@@ -187,5 +188,8 @@ a.active{
 
   }
 
-  @media only screen and (max-width: 690px) {
+  @media only screen and (max-width: 525px) {
+    header{
+    flex-direction: column;
+    }
 }
