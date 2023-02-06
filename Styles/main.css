@@ -40,8 +40,53 @@ margin: 2em;
     -webkit-text-fill-color: #B52C24;
     text-align: center;
     margin: 1em;
+    text-decoration: none;
 }
 
+/*Popout Begin*/
+
+.overlay {
+    height: 100%;
+    width: 100%; 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.3s; 
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 101%; 
+    text-align: center; 
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    font-family: 'Happy Monkey', cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; 
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+  }
+
+  .openNav{
+    opacity: 1;
+  }
+
+/*Popout End*/
 
 /* Hamburger Menu Start*/
 
@@ -75,21 +120,16 @@ margin: 2em;
     left: 5px;
   }
   
-  /* Rotate first bar */
   .change .bar1 {
     transform: translate(0, 15.5px) rotate(-45deg);
   }
   
-  /* Fade out the second bar */
-  .change .bar2 {opacity: 0;}
+  .change .bar2 {opacity: 0;
+}
   
-  /* Rotate last bar */
   .change .bar3 {
     transform: translate(0, -15.5px) rotate(45deg);
   }
-
-  /* Hamburger Menu End*/
-
   /*END OF HEADER*/
 
 
@@ -109,7 +149,12 @@ margin: 2em;
 
 
 @media only screen and (min-width: 691px) {
+
     .hamburger {
+        display: none;
+    }
+
+    .overlay{
         display: none;
     }
   }
@@ -119,10 +164,17 @@ margin: 2em;
     .navbar {
         display: none;
     }
+
   }
 
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 690px) {
     header{
         flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    header{
+        flex-wrap: wrap;
     }
 }
