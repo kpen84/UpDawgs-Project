@@ -20,21 +20,23 @@
 
     <header>
 
-        <p class="logo"><img src="images/UpDawgsLogo.png"></p>
+        <a href="index.html" class="logo"><img src="images/UpDawgsLogo.png"></a>
 
-        <nav class="navbar">
-            <a class="active" href="index.html">home</index></a>
-            <a href="about">about</a>
-            <a href="menu">menu</a>
-            <a href="contact">contact</a>
-            <a href="cart.html">cart</a>            
-        </nav>
-    
-        <div class="hamburger" onclick="myFunction(this)">
+        <div class="hamburger" id="menu-icon" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
          </div>
+
+        <ul class="navbar">
+            <a class="current" href="index.html">home</index></a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="contact.html">contact</a>
+            <a href="cart.html">cart</a>          
+        </ul>
+    
+
 
          <div id="myNav" class="overlay">
             <div class="overlay-content">

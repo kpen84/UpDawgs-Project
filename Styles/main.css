@@ -7,20 +7,30 @@
 #c48d54	bread
 #f1e4d6	off white*/
 
-body {
-    background-color: #FDF9D6;
-    margin: 0;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
+
+:root{
+  --bg-color: #FDF9D6;
+  --text-color: #B52C24;
+}
+
 
 header {
   background-color: #FDF9D6;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
+  z-index: 1000;
   display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
 }
 
 .logo {
@@ -54,7 +64,7 @@ header {
   -webkit-text-fill-color: #B52C24;
 }
 
-a.active{
+ a.current {
   text-decoration: underline;
 }
 
