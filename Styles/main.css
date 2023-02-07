@@ -217,21 +217,27 @@ header {
   align-items: center;
   justify-items: end;
   padding: 2em;
-  background-image: url(../images/hotdogbanner.png);
+  background-image: url(../images/hotdogbannertopandbottom.png);
   background-size: cover;
   background-position: top left;
-  padding: 1em;
+  padding: 3em;
 }
 
 .about-text{
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3em;
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   border-radius: 25px;
 }
 
 h1,
 h2{
+  text-align: left;
   font-weight: bolder;
+}
+
+h2{
+  font-weight: lighter;
 }
 
 
