@@ -187,10 +187,6 @@ header {
 .top-main{
   width: 100%;
   background-color: var(--header-bg-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   position: relative;
 }
 
@@ -221,6 +217,7 @@ header {
   padding: 2em;
   background-image: url(../images/background.jpg);
   background-size: cover;
+  background-position: right;
   padding: 1em;
 }
 
