@@ -186,15 +186,17 @@ header {
 
 .top-main{
   width: 100%;
+  height: 100%;
   background-color: var(--header-bg-color);
   position: relative;
 }
 
 .top-logo {
-  width: 100%;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5em;
 }
 
 .dog img{
@@ -215,9 +217,9 @@ header {
   align-items: center;
   justify-items: end;
   padding: 2em;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/hotdogbanner.png);
   background-size: cover;
-  background-position: right;
+  background-position: top left;
   padding: 1em;
 }
 
