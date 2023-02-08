@@ -16,43 +16,40 @@
   color: var(--text-color);
 }
 
-main{
+main {
   background-color: var(--bg-color);
 }
-
-p{
+p {
   font-weight: lighter;
+  line-height: 2rem;
 }
-
-h1{
+h1 {
   font-weight: bolder;
+  line-height: 2.5rem;
+  font-size: larger;
 }
-
-h2{
+h2 {
   font-size: bold;
+  line-height: 2.5rem;
+  font-size: large;
 }
-
 .large {
   font-size: larger;
 }
-
 .medium {
   font-size: medium;
 }
-
 .small {
   font-size: small;
 }
-
 .bold {
   font-weight: bold;
 }
-
 .bolder {
   font-weight: bolder;
 }
 
-:root{
+:root {
   --bg-color: #D73135;
   --text-color: #FDF9D6;
   --hover-color: #FFDB58;
