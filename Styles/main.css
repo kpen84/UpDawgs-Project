@@ -228,7 +228,33 @@ header {
   text-align: center;
   border-radius: 25px;
   font-weight: bold;
+  width: 100%;
 }
+
+.about-text img{
+  max-width: 120px;
+  position: relative;
+  top:10px;
+}
+.about-text b{
+  padding-right: 7px;
+}
+.about-text button{
+  position: relative;
+  top: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--text-color);
+  padding: 7px 15px;
+  border:none;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#more {display: none;}
 
 h1,
 h2{
