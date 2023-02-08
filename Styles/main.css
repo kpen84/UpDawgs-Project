@@ -5,6 +5,13 @@
 #c48d54	bread
 #f1e4d6	off white*/
 
+:root {
+  --bg-color: #D73135;
+  --text-color: #FDF9D6;
+  --hover-color: #FFDB58;
+  --background: rgba(0, 0, 0, 0);
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -14,6 +21,8 @@
   font-family: 'Happy Monkey', cursive;
   list-style-type: none;
   color: var(--text-color);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 9), 0 0 5px rgba(0, 0, 0, 9);
+  font-size: 20px;
 }
 
 main {
@@ -26,21 +35,21 @@ p {
 h1 {
   font-weight: bolder;
   line-height: 2.5rem;
-  font-size: larger;
+  font-size: 2rem;
 }
 h2 {
   font-size: bold;
   line-height: 2.5rem;
-  font-size: large;
+  font-size: 1rem;
 }
 .large {
-  font-size: larger;
+  font-size: 3rem;
 }
 .medium {
-  font-size: medium;
+  font-size: 2rem;
 }
 .small {
-  font-size: small;
+  font-size: 1rem;
 }
 .bold {
   font-weight: bold;
@@ -50,13 +59,7 @@ h2 {
 }
 
 .shadow{
-  box-shadow: 10px 10px 8px #000000a9;
-}
-
-:root {
-  --bg-color: #D73135;
-  --text-color: #FDF9D6;
-  --hover-color: #FFDB58;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -74,6 +77,7 @@ header {
   justify-content: space-between;
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 8px #000000a9;
+  background-color: var(--background);
 }
 
 a img{
@@ -146,7 +150,7 @@ a img{
 .overlay {
 
   width: 100%; 
-  background-color: rgba(0,0,0, 0.8); 
+  background-color: var(--background); 
   transition: 0.3s; 
   overflow: hidden;
   display: none;
@@ -237,7 +241,7 @@ a img{
 .about-text{
   line-height: 3rem;
   padding: 3em;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--background);
   text-align: center;
   border-radius: 25px;
   width: 100%;
