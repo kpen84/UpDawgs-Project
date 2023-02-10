@@ -1,4 +1,3 @@
-
   function myFunction() {
     var x = document.getElementById("myNav");
     if (x.style.display === "block") {
