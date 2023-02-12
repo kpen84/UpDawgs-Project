@@ -25,7 +25,7 @@
   font-size: 20px;
 }
 
-main {
+body {
   background-color: var(--bg-color);
 }
 p {
@@ -79,7 +79,6 @@ h2 strong{
 /* Header */
 
 header {
-  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
@@ -218,13 +217,6 @@ a img{
 
 
 
-.banner{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 2em;
-  background-color: #D83337;
-}
 
 .fa {
   padding: 20px;
@@ -237,6 +229,10 @@ a img{
     opacity: 0.7;
 }
 
+.banner{
+  top: 0;
+}
+
 .banner-logo {
   min-width: 200px;
   display: flex;
@@ -247,19 +243,20 @@ a img{
 .final-logo img{
   width: 100%;
   min-width: 100px;
+  box-shadow: 0px 0px 8px #000000a9;
 }
 
 .about{
+  padding: 2em 3em;
   position: relative;
   top: 0;
-  right: 0;
+  left: 0;
   display: flex;
   flex: wrap;
   align-items: center;
   background-image: url(../images/hotdogbannertopandbottom.png);
   background-size: cover;
   background-position: top left;
-  padding: 3em 1em;
 }
 
 .about-text{
